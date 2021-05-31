@@ -16,4 +16,11 @@ public class King extends ChessPiece {
 		return "K";
 	}
 
+	@Override
+	public boolean[][] possibleMoves() {
+		//Provisional
+		boolean [][] mat = new boolean[getBoard().getRows()] [getBoard().getColumns()];
+		return mat;
+	}
+
 }
