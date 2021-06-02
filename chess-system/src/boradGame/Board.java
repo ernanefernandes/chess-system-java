@@ -46,11 +46,11 @@ public class Board {
 	
 	public Piece removePiece(Position position) {
 		if(!positionExists(position)) {
-			throw new BoardException("Position not om the board");
+			throw new BoardException("Position not on the board");
 		}
 		Piece aux = piece(position);
 		aux.position = null;
-		pieces[position.getRow()][position.getColum()] =null;
+		pieces[position.getRow()][position.getColum()] = null;
 		return aux;
 	}
 	
@@ -64,7 +64,7 @@ public class Board {
 	
 	public boolean thereIsAPiece(Position position) {
 		if(!positionExists(position)) {
-			throw new BoardException("Position not om the board");
+			throw new BoardException("Position not on the board");
 		}
 		return piece (position)!=null;
 	}

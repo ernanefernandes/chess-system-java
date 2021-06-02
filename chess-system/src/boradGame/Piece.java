@@ -1,7 +1,5 @@
 package boradGame;
 
-import java.util.Iterator;
-
 public abstract class Piece {
 	
 	//
