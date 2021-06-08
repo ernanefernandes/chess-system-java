@@ -35,7 +35,7 @@ public class Program {
 		System.out.print("Target: ");
 		ChessPosition target  = UI.readChessPosition(sc);
 		
-		ChessPiece capturedPiece = chessmatch.performaceChessMove(source, target);
+		ChessPiece capturedPiece = chessmatch.performChessMove(source, target);
 		
 		if(capturedPiece != null) {
 			captured.add(capturedPiece);

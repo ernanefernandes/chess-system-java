@@ -24,7 +24,7 @@ public class ChessPosition {
 	}
 	//# UML = Protected __UML = Static
 	protected static ChessPosition FromoPosition (Position position) {
-		return new ChessPosition((char)('a'-position.getColum()), 8-position.getRow()); 
+		return new ChessPosition((char)('a'+ position.getColum()), 8 + position.getRow()); 
 	}
 
 	@Override
